@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.Material.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollX="@dimen/activity_horizontal_margin"
+    android:scrollbarStyle="insideOverlay"
+    tools:context=".view.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rela2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_cathe"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="11dp"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/avatar_cathe"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:onClick="avatar_ruoka"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_feed_baby" />
+
+                <TextView
+                    android:id="@+id/tv_cathe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="RUOKA"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_dan"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:layout_alignTop="@+id/card_cathe"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="33dp"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/avatar_dan"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:onClick="avatar_maitopumppu"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/pum" />
+
+                <TextView
+                    android:id="@+id/tv_dan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="MAITO"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_hoadon"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/card_cathe"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/avatar_hoadon"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:onClick="avatar_vaippa"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/diaper_poo_show" />
+
+                <TextView
+                    android:id="@+id/tv_hoadon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="VAIPPA"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_baocao"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/card_dan"
+            android:layout_alignStart="@+id/card_dan"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_mittaus"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/can"
+                    android:onClick="avatar_mittaus"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_baocao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="MITTAUS"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_thitruong"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/card_hoadon"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="1dp"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_thitruong"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:onClick="avatar_vinkki"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_tips_baby" />
+
+                <TextView
+                    android:id="@+id/tv_thitruong"
+                    android:layout_width="117dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/img_thitruong"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="infoVAUVA"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_user"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/card_baocao"
+            android:layout_alignStart="@+id/card_baocao"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:onClick="avatar_user"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_sleep_baby" />
+
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="138dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/img_user"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="NUKKUMINEN"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</ScrollView>

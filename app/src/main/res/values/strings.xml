@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">VauvaSenranta</string>
+    <string name="app_name">Vauva Seuranta</string>
+    <string name="title_activity_nukkuminen">NukkuminenActivity</string>
+    <string name="title_activity_sleeping_activity">sleeping_activity</string>
 </resources>

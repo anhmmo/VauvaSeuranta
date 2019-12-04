@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:id="@+id/tv_laji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="RUOKA NIMI"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_muisti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginBottom="44dp"
+            android:text="Note" />
+
+        <ImageView
+
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/tv_laji"
+            android:layout_alignTop="@+id/tv_muisti"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="-47dp"
+            android:background="@drawable/milk_bottle" />
+
+        <TextView
+            android:id="@+id/tv_maara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_laji"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="53dp"
+            android:padding="2dp"
+            android:text="MÄÄRÄ"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_poistetaan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_laji"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="27dp"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginBottom="83dp"
+            android:text="ML"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textViewAika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="9dp"
+            android:text="TextView" />
+
+        <ImageView
+
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/tv_laji"
+            android:layout_alignTop="@+id/tv_muisti"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="-7dp"
+            android:background="@drawable/notes" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
