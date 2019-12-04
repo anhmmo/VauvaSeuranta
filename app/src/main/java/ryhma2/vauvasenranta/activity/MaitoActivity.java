@@ -77,10 +77,10 @@ public class MaitoActivity extends AppCompatActivity {
                         String texti = ed_textit.getText().toString();
                         int maarat = ParseDouble(ed_maara.getText().toString());
                          if(nimet.equals("")|| texti.equals("")){
-                             Toast.makeText(MaitoActivity.this, "Täyttä puutuvat tiedot", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(MaitoActivity.this, "Täytä puuttuvat tiedot", Toast.LENGTH_SHORT).show();
                          }else {
                              maito_databases.insert(new MaitoPumppu(nimet,maarat,texti));
-                             Toast.makeText(MaitoActivity.this, "Lisätty onnistui", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(MaitoActivity.this, "Lisää onnistuneesti", Toast.LENGTH_SHORT).show();
                                 updatedata();
                                 dialog.dismiss();
                          }
