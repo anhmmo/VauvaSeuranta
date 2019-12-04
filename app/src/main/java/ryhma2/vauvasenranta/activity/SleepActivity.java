@@ -18,26 +18,17 @@ public class SleepActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sleeping);
         Button two = (Button)this.findViewById(R.id.button3);
+
+
+
+
         final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.lullaby_3);
         two.setOnClickListener(new View.OnClickListener(){
-//David Neto https://stackoverflow.com/questions/18678873/android-button-click-to-play-music-click-again-to-stop-sound
+           //David Neto https://stackoverflow.com/questions/18678873/android-button-click-to-play-music-click-again-to-stop-sound
             public void onClick(View v) {
 
                 // If the music is playing
-                if(mp2.isPlaying() == true)
-                    // Pause the music player
-                {
-                    mp2.pause();
-                }
 
-                    // If it's not playing
-                else
-                    // Resume the music player
-                {
-                    mp2.start();
-                    mp2.setLooping(true);
-
-                }
             }
         });
     }
