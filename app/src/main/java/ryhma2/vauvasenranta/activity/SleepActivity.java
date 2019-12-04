@@ -26,13 +26,18 @@ public class SleepActivity extends AppCompatActivity {
                 // If the music is playing
                 if(mp2.isPlaying() == true)
                     // Pause the music player
-                {   mp2.pause();
+                {
+                    mp2.pause();
                 }
 
                     // If it's not playing
                 else
                     // Resume the music player
-                { mp2.start();}
+                {
+                    mp2.start();
+                    mp2.setLooping(true);
+
+                }
             }
         });
     }

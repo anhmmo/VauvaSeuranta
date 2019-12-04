@@ -8,7 +8,19 @@ import android.os.Bundle;
 import ryhma2.vauvasenranta.common.Adapter_TAUTI_VINKKI_tablelayout;
 import ryhma2.vauvasenranta.R;
 
+/**
+ * Luokka sisältää laskennassa tarvittavia apurutiineja
+ * @author NGUYEN AU
+ * @version 1.0 11/2019
+ */
+
+
 public class InfoActivity extends AppCompatActivity {
+
+
+
+
+
     TabLayout tab_Layout;
     ViewPager view_Pager;
     Adapter_TAUTI_VINKKI_tablelayout adapteri_laake_vinkkeja;

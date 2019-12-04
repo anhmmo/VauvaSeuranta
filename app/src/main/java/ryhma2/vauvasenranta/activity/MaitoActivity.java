@@ -21,13 +21,20 @@ import ryhma2.vauvasenranta.sqlite.MaitoDAO;
 
 import java.util.List;
 
+
+
 public class MaitoActivity extends AppCompatActivity {
+
+
+
     RecyclerView recyclerview_maito;
     FloatingActionButton fab_maito;
     private List<MaitoPumppu> maito;
     private MaitoPumppu maitoLista;
     private Adapter_maito adapter_maito;
     private MaitoDAO maito_databases;
+
+
 
 
     @Override
@@ -90,12 +97,14 @@ public class MaitoActivity extends AppCompatActivity {
         });
     }
     public void updatedata(){
+
         maito.clear();
         maito.addAll(maito_databases.getAlldata());
         adapter_maito.notifyDataSetChanged();
     }
 
     public int ParseDouble(String strNumber) {
+
         if (strNumber != null && strNumber.length() > 0) {
             try {
                 return Integer.parseInt(strNumber);
@@ -106,6 +115,7 @@ public class MaitoActivity extends AppCompatActivity {
             Toast.makeText(this, "Täyttä puutuvat tiedot", Toast.LENGTH_SHORT).show();
         }
         return 0;
+
     }
     public void poistaItem(int position){
         maitoLista = new MaitoPumppu();
