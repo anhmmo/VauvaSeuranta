@@ -28,7 +28,7 @@
         android:layout_below="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
-        android:text="maito pumpu lista"
+        android:text="Syöttämiset:"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp" />
 
