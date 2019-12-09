@@ -22,6 +22,9 @@ import ryhma2.vauvasenranta.activity.VaippaActivity;
 import ryhma2.vauvasenranta.activity.InfoActivity;
 import ryhma2.vauvasenranta.activity.RuokaActivity;
 
+/**
+ * Show homepage of application
+ */
 public class HomeActivity extends AppCompatActivity {
 
     private TextView menu;
@@ -107,32 +110,57 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Open RuokaActivity when user click on the avatar_ruoka
+     * @param view using Intent to open second view
+     */
+
     public void avatar_ruoka(View view) {
         Intent intent = new Intent(HomeActivity.this, RuokaActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Open MaitoActivity when user click on the avatar_maitopumppu
+     * @param view using Intent to open second view
+     */
     public void avatar_maitopumppu(View view) {
         Intent intent = new Intent(HomeActivity.this, MaitoActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Open VaippaActivity when user click on the avatar_vaippa
+     * @param view using Intent to open second view
+     */
     public void avatar_vaippa(View view) {
         Intent intent = new Intent(HomeActivity.this, VaippaActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Open MittausActivity when user click on the avatar_mittaus
+     * @param view using Intent to open second view
+     */
     public void avatar_mittaus(View view) {
         Intent intent = new Intent(HomeActivity.this, MittausActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Open InfoActivity when user click on the avatar_vinkki
+     * @param view using Intent to open second view
+     */
     public void avatar_vinkki(View view) {
         Toast.makeText(this, "Yhdistetään sivustoon !!", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(HomeActivity.this, InfoActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Open SleepActivity when user click on the avatar_user
+     * @param view using Intent to open second view
+     */
     public void avatar_user(View view) {
         Intent intent = new Intent(HomeActivity.this, SleepActivity.class);
         startActivity(intent);
