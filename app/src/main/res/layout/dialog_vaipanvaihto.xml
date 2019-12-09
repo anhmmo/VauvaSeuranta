@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="Vaipanvaihto tiedot"
+        android:text="Vaipanvaihdon tiedot"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -23,7 +23,7 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="pissavaippa" />
+            android:text="Pissa" />
 
         <Button
             android:id="@+id/button32"
@@ -35,7 +35,7 @@
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="kakkavaippa" />
+            android:text="Kakka" />
 
         <Button
             android:id="@+id/button33"
@@ -47,7 +47,7 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="molemmat" />
+            android:text="Molemmat" />
     </RadioGroup>
 
     <EditText
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Vaipanlaji (kpl tai tiedot)"
+        android:hint="Vaippa (kpl tai tiedot)"
         android:inputType="textPersonName" />
 
     <EditText

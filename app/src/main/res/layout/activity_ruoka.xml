@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView2"
         android:layout_below="@+id/textView2"
-        android:text="SYÖMINEN JA RUOKA"
+        android:text="Syömiset:"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:layout_alignLeft="@+id/textView2" />
