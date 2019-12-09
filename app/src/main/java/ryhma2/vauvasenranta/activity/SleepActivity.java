@@ -16,6 +16,15 @@ import ryhma2.vauvasenranta.R;
 import ryhma2.vauvasenranta.base.MusicPlayer;
 
 
+/**
+ * <h1>Sleep class!</h1>
+ * This class used to display button and icon, user play sounds by click on the imagebutton.
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
+
 public class SleepActivity extends AppCompatActivity {
 
 private TextView menu2;

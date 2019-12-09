@@ -25,6 +25,23 @@ import ryhma2.vauvasenranta.sqlite.VaippaDAO;
 
 import java.util.List;
 
+/**
+ * <h1>Vaippa class!</h1>
+ * This class used to get user input information from dialog (use AlertDialog class) then save to vaippaDao (Sqlite databases).
+ * Communicate with Adater_vaippa to get data and show the output on the screen.
+ * Instance variable <b>recyclerview_vaippa</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
+ * Instance variable <b>vaippaTietokanta</b> create new instance of vaippaDao.
+ * Instance variable <b>vaippa</b> create new a list for Vaippa class (use List<>) to store data get from current databases.
+ * Instance variable <b>adapter_vaippa</b> create new Adapter_vaippa class instance.
+ * Instance variable <b>vaipat</b> create new Vaippa class instance.
+ * Instance variable <b>aika</b> create new TimerActivity class instance.
+
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
+
 public class VaippaActivity extends AppCompatActivity {
     RecyclerView recyclerView_vaippa;
     FloatingActionButton fab_vaippa;
@@ -131,6 +148,12 @@ public class VaippaActivity extends AppCompatActivity {
         });
 
     }
+
+    /**
+     * This method is used to delete item from the list.
+     * @param position get position of the item from list
+     */
+
     public void removeItem(int position){
         vaippa = new Vaippa();
         vaippa = vaipat.get(position);
@@ -138,6 +161,10 @@ public class VaippaActivity extends AppCompatActivity {
         vaippaTietokanta.delete(vaippa);
         updatedata();
     }
+
+    /**
+     * This method is used to update data to list
+     */
 
     public void updatedata(){
         vaipat.clear();

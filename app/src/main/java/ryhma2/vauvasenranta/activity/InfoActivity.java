@@ -8,6 +8,22 @@ import android.os.Bundle;
 import ryhma2.vauvasenranta.common.Adapter_TAUTI_VINKKI_tablelayout;
 import ryhma2.vauvasenranta.R;
 
+
+/**
+ * <h1>Info class!</h1>
+ * This class used to get user input information from dialog (use AlertDialog class) then save to MaitoDao (Sqlite databases).
+ * Communicate with Adater_maito to get data and show the output on the screen.
+ * Instance variable <b>tab_Layout</b> TabLayout provides a horizontal layout to display tabs.
+ * Instance variable <b>view_Pager</b> show webpage in the screen. ViewPager is most often used in conjunction with Fragment, which is a convenient way to supply and manage the lifecycle of each page.
+ * Instance variable <b>adapteri_laake_vinkkeja</b> create new instance of Adapter_TAUTI_VINKKI_tablelayout.
+
+
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
+
 public class InfoActivity extends AppCompatActivity {
     TabLayout tab_Layout;
     ViewPager view_Pager;

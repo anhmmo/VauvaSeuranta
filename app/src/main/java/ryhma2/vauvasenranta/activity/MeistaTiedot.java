@@ -9,6 +9,16 @@ import android.view.View;
 import ryhma2.vauvasenranta.R;
 
 
+
+/**
+ * <h1>Meista class!</h1>
+ * This class used to show information about author.
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
+
 public class MeistaTiedot extends AppCompatActivity {
 
     @Override
