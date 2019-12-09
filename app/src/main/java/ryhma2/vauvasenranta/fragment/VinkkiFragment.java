@@ -130,7 +130,7 @@ public class VinkkiFragment extends Fragment {
                 "viikossa itsestään. Hyönteisen pistoa muistuttavat punaiset läiskät, joissa on vaaleampi\n" +
                 "näppylä keskellä, katoavat myös itsestään. Niitä voi ilmaantua eri puolella kehoa, eikä\n" +
                 "niiden syytä tarkalleen tiedetä. Kolmantena tavallisena iho-oireena voi ilmetä\n" +
-                "vastasyntyneen kasvoille ilmestyvät ”finnit”, jotka ovat seuraus äidiltä saaduista\n" +
+                "vastasyntyneen kasvoille ilmestyvät finnit, jotka ovat seuraus äidiltä saaduista\n" +
                 "hormoneista. Nämäkin ovat vaarattomia ja häviävät muutamassa kuukaudessa.\n" +
                 "Syntymän jälkeen napanuora katkaistaan ja suljetaan pienellä kumirenkaalla. Yhdenkahden viikon kuluttua jäljellä oleva napanuoran osa kuivuu ja irtoaa. Napaa tulisi tarkkailla\n" +
                 "ja hoitaa ennen irtoamista. Navan seutu pidetään kuivana tulehdusriskin estämiseksi.\n" +

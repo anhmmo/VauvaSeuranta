@@ -22,6 +22,20 @@ import ryhma2.vauvasenranta.sqlite.RuokaDAO;
 
 import java.util.List;
 
+/**
+ * <h1>Add Two Numbers!</h1>
+ * The AddNum program implements an application that
+ * simply adds two given integer numbers and Prints
+ * the output on the screen.
+ * <p>
+ * <b>Note:</b> Giving proper comments in your program makes it more
+ * user friendly and it is assumed as a high quality code.
+ *
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.11.2019
+ */
+
 public class RuokaActivity extends AppCompatActivity {
     private RecyclerView ryc_ruoka;
     private RuokaDAO ruoka_databases;
@@ -128,6 +142,15 @@ public class RuokaActivity extends AppCompatActivity {
     //add button function end
 
     public int ParseInt(String strNumber) {
+
+        /**
+         * This method is used to add two integers. This is
+         * a the simplest form of a class method, just to
+         * show the usage of various javadoc Tags.
+         * @param strNumber This is the first paramter to addNum method
+         * @return int This returns sum of numA and numB.
+         */
+
         if (strNumber != null && strNumber.length() > 0) {
             try {
                 return Integer.parseInt(strNumber);
@@ -139,6 +162,8 @@ public class RuokaActivity extends AppCompatActivity {
         }
         return 0;
     }
+
+
 
     public void updatedata(){
         ruokaListat.clear();

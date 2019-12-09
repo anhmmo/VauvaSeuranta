@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import ryhma2.vauvasenranta.R;
 import ryhma2.vauvasenranta.interface1.OnitemDeleteItem;
 import ryhma2.vauvasenranta.model.Mittaus;

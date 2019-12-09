@@ -11,9 +11,7 @@ import android.webkit.WebViewClient;
 
 import ryhma2.vauvasenranta.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class TautiJaLaakeFragment extends Fragment {
 private WebView webView;
 
