@@ -89,7 +89,7 @@ public class VaippaActivity extends AppCompatActivity {
                         String laji = "";
 
                         if(vaipa.getCheckedRadioButtonId()==R.id.radioButton){
-                            laji = "Pisavaippa";
+                            laji = "Pissavaippa";
 
 
                         }
@@ -100,7 +100,7 @@ public class VaippaActivity extends AppCompatActivity {
                         }
 
                         else if(vaipa.getCheckedRadioButtonId()==R.id.radioButton3){
-                            laji = "Kakka ja -pisavaippa";
+                            laji = "Kakka ja -pissavaippa";
 
 
                         }
