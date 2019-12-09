@@ -25,13 +25,13 @@ import java.util.List;
 
 /**
  * <h1>Maito class!</h1>
- * This class used to get user input information from dialog (use AlertDialog class) then save to MaitoDao (Sqlite databases).
- * Communicate with Adater_maito to get data and show the output on the screen.
- * Instance variable <b>recyclerview_maito</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
- * Instance variable <b>maito_databases</b> create new instance of RuokaDao.
- * Instance variable <b>maito</b> create new a list for Maito class (use List<>) to store data get from current databases.
- * Instance variable <b>adapter_maito</b> create new Adapter_maito class instance.
- * Instance variable <b>maitoLista</b> create new Maito class instance.
+ * This class used to get user input information from dialog (use AlertDialog class) then save to MittausDao (Sqlite databases).
+ * Communicate with Adater_mittaus to get data and show the output on the screen.
+ * Instance variable <b>ryc_mittaus</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
+ * Instance variable <b>mittaus_Tietokanta</b> create new instance of MittausDao.
+ * Instance variable <b>mittaukset</b> create new a list for Mittaus class (use List<>) to store data get from current databases.
+ * Instance variable <b>adapter_mittaus</b> create new Adapter_mittaus class instance.
+ * Instance variable <b>mittausLista</b> create new Maito class instance.
  * Instance variable <b>aika</b> create new TimerActivity class instance.
 
 
@@ -112,6 +112,13 @@ public class MittausActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    /**
+     * This method is used to convert String to Double.
+     * @param strNumber get String
+     * @return 0
+     */
     public double ParseDouble(String strNumber) {
         if (strNumber != null && strNumber.length() > 0) {
             try {
@@ -124,11 +131,21 @@ public class MittausActivity extends AppCompatActivity {
         }
         return 0;
     }
+
+    /**
+     * This method is used to update data to list
+     */
     public void updatedata(){
         mittausLista.clear();
         mittausLista.addAll(mittausTietokanta.getAlldata());
         adapter_mittaus.notifyDataSetChanged();
     }
+
+
+    /**
+     * This method is used to delete item from the list.
+     * @param position get position of the item from list
+     */
     public void removeitem(int position){
         mittaukset = new Mittaus();
         mittaukset = mittausLista.get(position);
