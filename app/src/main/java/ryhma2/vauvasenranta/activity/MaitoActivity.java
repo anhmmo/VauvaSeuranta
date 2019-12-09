@@ -22,6 +22,23 @@ import ryhma2.vauvasenranta.sqlite.MaitoDAO;
 
 import java.util.List;
 
+/**
+ * <h1>Maito class!</h1>
+ * This class used to get user input information from dialog (use AlertDialog class) then save to MaitoDao (Sqlite databases).
+ * Communicate with Adater_ruoka to get data and show the output on the screen.
+ * Instance variable <b>recyclerview_maito</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
+ * Instance variable <b>maito_databases</b> create new instance of RuokaDao.
+ * Instance variable <b>maito</b> create new a list for Maito class (use List<>) to store data get from current databases.
+ * Instance variable <b>adapter_maito</b> create new Adapter_maito class instance.
+ * Instance variable <b>ruoat</b> create new Maito class instance.
+ * Instance variable <b>aika</b> create new TimerActivity class instance.
+
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.11.2019
+ */
+
 public class MaitoActivity extends AppCompatActivity {
     RecyclerView recyclerview_maito;
     FloatingActionButton fab_maito;
@@ -90,11 +107,22 @@ public class MaitoActivity extends AppCompatActivity {
             }
         });
     }
+
+    /**
+     * This method is used to update data to list
+     */
+
     public void updatedata(){
         maito.clear();
         maito.addAll(maito_databases.getAlldata());
         adapter_maito.notifyDataSetChanged();
     }
+
+    /**
+     * This method is used to convert String to Double.
+     * @param strNumber get String
+     * @return 0
+     */
 
     public int ParseDouble(String strNumber) {
         if (strNumber != null && strNumber.length() > 0) {
@@ -108,6 +136,12 @@ public class MaitoActivity extends AppCompatActivity {
         }
         return 0;
     }
+
+    /**
+     * This method is used to delete item from the list.
+     * @param position get position of the item from list
+     */
+
     public void poistaItem(int position){
         maitoLista = new MaitoPumppu();
         maitoLista = maito.get(position);
