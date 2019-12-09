@@ -59,7 +59,7 @@ public class HomeActivity extends AppCompatActivity {
                 meista.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(HomeActivity.this, MaitoActivity.class);
+                        Intent intent = new Intent(HomeActivity.this, MeistaTiedot.class);
                         startActivity(intent);
                     }
                 });
