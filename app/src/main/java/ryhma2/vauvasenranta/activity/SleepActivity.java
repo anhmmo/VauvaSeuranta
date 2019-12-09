@@ -1,11 +1,15 @@
 package ryhma2.vauvasenranta.activity;
 
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 import ryhma2.vauvasenranta.R;
@@ -14,12 +18,50 @@ import ryhma2.vauvasenranta.base.MusicPlayer;
 
 public class SleepActivity extends AppCompatActivity {
 
-
+private TextView menu2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sleeping);
+
+
+        menu2 = findViewById(R.id.buttonmusicmenu);
+
+
+        //click event button
+        menu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(SleepActivity.this);
+                View v14 = getLayoutInflater().inflate(R.layout.menu2,null);
+                Button version = v14.findViewById(R.id.btn_version);
+                Button aboutus = v14.findViewById(R.id.btn_aboutus);
+
+
+                builder.setView(v14);
+                final Dialog dialog = builder.create();
+                dialog.show();
+                version.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SleepActivity.this, MusicInfo.class);
+                        startActivity(intent);
+                    }
+                });
+
+                aboutus.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SleepActivity.this, MeistaTiedot.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+        });
+
+
 
 
 

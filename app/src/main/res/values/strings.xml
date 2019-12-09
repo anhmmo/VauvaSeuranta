@@ -4,4 +4,5 @@
     <string name="title_activity_sleeping_activity">sleeping_activity</string>
     <string name="title_activity_vauvan_tiedot">VauvanTiedot</string>
     <string name="title_activity_meista_tiedot">MeistaTiedot</string>
+    <string name="title_activity_music_info">MusicInfo</string>
 </resources>

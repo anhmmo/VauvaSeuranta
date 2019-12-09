@@ -233,7 +233,7 @@
         app:srcCompat="@drawable/bg_curved_top_3" />
 
     <Button
-        android:id="@+id/button29"
+        android:id="@+id/buttonmusicmenu"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"

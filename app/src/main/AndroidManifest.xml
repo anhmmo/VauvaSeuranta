@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activity.MusicInfo"
+            android:label="@string/title_activity_music_info"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".activity.MeistaTiedot"
             android:label="@string/title_activity_meista_tiedot"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.SleepActivity"
             android:label="@string/title_activity_sleeping_activity"
