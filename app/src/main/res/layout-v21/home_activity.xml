@@ -96,7 +96,7 @@
                     android:layout_marginLeft="38dp"
                     android:layout_marginBottom="5dp"
                     android:padding="5dp"
-                    android:text="MAITO-PUMPPU"
+                    android:text="MAITO"
                     android:textAllCaps="true"
                     android:textSize="18sp"
                     android:textStyle="bold" />

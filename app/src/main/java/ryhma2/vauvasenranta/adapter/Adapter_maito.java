@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import ryhma2.vauvasenranta.R;
 import ryhma2.vauvasenranta.interface1.OnitemDeleteItem;
 import ryhma2.vauvasenranta.model.MaitoPumppu;
@@ -55,7 +56,7 @@ public class Adapter_maito extends RecyclerView.Adapter<Adapter_maito.ViewHodel>
             }
         });
         int maarat = Integer.parseInt(holder.maara.getText().toString());
-        int kq = (800-maarat);
+        int kq = 800;
         holder.summa.setText(String.valueOf(kq));
 
     }

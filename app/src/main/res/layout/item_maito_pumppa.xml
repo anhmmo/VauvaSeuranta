@@ -79,7 +79,7 @@
             android:layout_alignTop="@+id/img_d"
             android:layout_marginStart="0dp"
             android:layout_marginTop="5dp"
-            android:text="Tarvitaan vielä" />
+            android:text="Päivän tavoite" />
 
         <TextView
             android:id="@+id/tarvitaan_maara"
