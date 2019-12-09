@@ -23,26 +23,34 @@ import ryhma2.vauvasenranta.sqlite.RuokaDAO;
 import java.util.List;
 
 /**
- * <h1>Add Two Numbers!</h1>
- * The AddNum program implements an application that
- * simply adds two given integer numbers and Prints
- * the output on the screen.
- * <p>
- * <b>Note:</b> Giving proper comments in your program makes it more
- * user friendly and it is assumed as a high quality code.
- *
+ * <h1>Ruoka class!</h1>
+ * This class used to get user input information from dialog (use AlertDialog class) then save to RuokaDao (Sqlite databases)
+ * communicate with Adater_ruoka to get data and show the output on the screen
+ * instance variable <b>ryc_ruoka</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
+ * instance variable <b>ruoka_databases</b> create new instance of RuokaDao.
+ * instance variable <b>ruokaListat</b> create new a list for Ruoka class (use List<>) to store data get from current databases.
+ * instance variable <b>adapter_ruoka</b> create new Adapter_ruoka class instance
+ * instance variable <b>ruoat</b> create new Ruoka class instance
+ * instance variable <b>aika</b> create new TimerActivity class instance.
+
+
  * @author  Au Nguyen
  * @version 1.0
  * @since   10.11.2019
  */
 
 public class RuokaActivity extends AppCompatActivity {
+
+
     private RecyclerView ryc_ruoka;
     private RuokaDAO ruoka_databases;
     private List<Ruoka> ruokaListat;
     private Adapter_ruoka adapter_ruoka;
     private Ruoka ruoat;
     private TimerActivity aika;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +68,12 @@ public class RuokaActivity extends AppCompatActivity {
         });
         ryc_ruoka.setAdapter(adapter_ruoka);
     }
+
+    /**
+     * This method is used to delete item from the list.
+     * @param position get position of the item from list
+     */
+
     public void removeitem(int position){
         ruoat = new Ruoka();
         ruoat = ruokaListat.get(position);
@@ -68,6 +82,11 @@ public class RuokaActivity extends AppCompatActivity {
         updatedata();
     }
 
+    /**
+     * This method is used to add item (ruoka) to list.
+     * AlertDialog and getLayoutInflater method are used to show dialog to the screen then get user input and save to the databases
+     * @param view get view from dialog
+     */
     //start add button function
     public void lisaaRuoka(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(RuokaActivity.this);
@@ -141,6 +160,12 @@ public class RuokaActivity extends AppCompatActivity {
 
     //add button function end
 
+    /**
+     * This method is used to convert String to Int.
+     * @param strNumber get String
+     * @return 0
+     */
+
     public int ParseInt(String strNumber) {
 
         if (strNumber != null && strNumber.length() > 0) {
@@ -155,7 +180,9 @@ public class RuokaActivity extends AppCompatActivity {
         return 0;
     }
 
-
+    /**
+     * This method is used to update data to list
+     */
 
     public void updatedata(){
         ruokaListat.clear();
