@@ -8,7 +8,7 @@ import android.os.Bundle;
 import ryhma2.vauvasenranta.R;
 
 public class MainActivity extends AppCompatActivity {
-    private static int waitingTime = 1000;
+    private static int waitingTime = 1500;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

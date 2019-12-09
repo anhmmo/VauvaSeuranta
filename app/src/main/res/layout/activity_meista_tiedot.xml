@@ -11,19 +11,18 @@
         android:id="@+id/button38"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
         android:background="@drawable/baby_avatar" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="158dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="301dp"
         android:text="Tekijät"
         android:textSize="30sp" />
 
@@ -34,8 +33,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="226dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="223dp"
         android:text="Au, Ann-mari, Roni"
         android:textSize="18sp" />
 
@@ -44,9 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="182dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginTop="190dp"
         android:text="Version 1.0 2019" />
 </RelativeLayout>
