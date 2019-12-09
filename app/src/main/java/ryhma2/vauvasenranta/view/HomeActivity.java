@@ -14,13 +14,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import ryhma2.vauvasenranta.R;
+import ryhma2.vauvasenranta.activity.MeistaTiedot;
 import ryhma2.vauvasenranta.activity.MittausActivity;
 import ryhma2.vauvasenranta.activity.MaitoActivity;
 import ryhma2.vauvasenranta.activity.SleepActivity;
 import ryhma2.vauvasenranta.activity.VaippaActivity;
 import ryhma2.vauvasenranta.activity.InfoActivity;
 import ryhma2.vauvasenranta.activity.RuokaActivity;
-import ryhma2.vauvasenranta.activity.MeistaTiedot;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -42,16 +42,20 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
                 View v12 = getLayoutInflater().inflate(R.layout.menu,null);
-                Button vauvantiedot = v12.findViewById(R.id.btn_vauvan_tiedot);
+                Button music = v12.findViewById(R.id.btn_music);
                 Button meista = v12.findViewById(R.id.btn_meista);
+                Button syominen = v12.findViewById(R.id.btn_ruokabutton);
+                Button maitopump = v12.findViewById(R.id.btn_maitopump);
+                Button vaipaa = v12.findViewById(R.id.btn_vaipaat);
+                Button painoe = v12.findViewById(R.id.btn_painopituus);
 
                 builder.setView(v12);
                 final Dialog dialog = builder.create();
                 dialog.show();
-                vauvantiedot.setOnClickListener(new View.OnClickListener() {
+                music.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(HomeActivity.this, MeistaTiedot.class);
+                        Intent intent = new Intent(HomeActivity.this, SleepActivity.class);
                         startActivity(intent);
                     }
                 });
@@ -60,6 +64,38 @@ public class HomeActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(HomeActivity.this, MeistaTiedot.class);
+                        startActivity(intent);
+                    }
+                });
+
+                syominen.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this, RuokaActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                maitopump.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this, MaitoActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                vaipaa.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this, VaippaActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                painoe.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(HomeActivity.this, MittausActivity.class);
                         startActivity(intent);
                     }
                 });

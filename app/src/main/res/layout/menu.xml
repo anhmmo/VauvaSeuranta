@@ -11,16 +11,6 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-
-        <Button
-            android:id="@+id/btn_vauvan_tiedot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_light"
-            android:ems="10"
-            android:text="Vauvan tiedot"
-            android:textColor="@color/white" />
-
         <Button
             android:id="@+id/btn_meista"
             android:layout_width="match_parent"
@@ -28,6 +18,53 @@
             android:background="@color/colorAccent"
             android:ems="10"
             android:text="Ryhmä 2"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:ems="10"
+            android:text="Music"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_ruokabutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:text="Ruokailu"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_maitopump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:ems="10"
+            android:text="Maitopumppu"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_vaipaat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:ems="10"
+            android:text="Vaippa"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_painopituus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:ems="10"
+            android:text="Mittaukset"
             android:textColor="@color/white" />
 
         <LinearLayout
