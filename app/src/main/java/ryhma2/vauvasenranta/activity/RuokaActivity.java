@@ -24,19 +24,19 @@ import java.util.List;
 
 /**
  * <h1>Ruoka class!</h1>
- * This class used to get user input information from dialog (use AlertDialog class) then save to RuokaDao (Sqlite databases)
- * communicate with Adater_ruoka to get data and show the output on the screen
- * instance variable <b>ryc_ruoka</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
- * instance variable <b>ruoka_databases</b> create new instance of RuokaDao.
- * instance variable <b>ruokaListat</b> create new a list for Ruoka class (use List<>) to store data get from current databases.
- * instance variable <b>adapter_ruoka</b> create new Adapter_ruoka class instance
- * instance variable <b>ruoat</b> create new Ruoka class instance
- * instance variable <b>aika</b> create new TimerActivity class instance.
+ * This class used to get user input information from dialog (use AlertDialog class) then save to RuokaDao (Sqlite databases).
+ * communicate with Adater_ruoka to get data and show the output on the screen.
+ * Instance variable <b>ryc_ruoka</b> create RycyclerView to show the output get from user. The RecyclerView widget is a more advanced and flexible version of ListView.
+ * Instance variable <b>ruoka_databases</b> create new instance of RuokaDao.
+ * Instance variable <b>ruokaListat</b> create new a list for Ruoka class (use List<>) to store data get from current databases.
+ * Instance variable <b>adapter_ruoka</b> create new Adapter_ruoka class instance.
+ * Instance variable <b>ruoat</b> create new Ruoka class instance.
+ * Instance variable <b>aika</b> create new TimerActivity class instance.
 
 
  * @author  Au Nguyen
  * @version 1.0
- * @since   10.11.2019
+ * @since   10.12.2019
  */
 
 public class RuokaActivity extends AppCompatActivity {
