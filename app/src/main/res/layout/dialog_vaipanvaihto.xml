@@ -23,7 +23,7 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="pisavaippa" />
+            android:text="pissavaippa" />
 
         <Button
             android:id="@+id/button32"
