@@ -3,6 +3,12 @@ package ryhma2.vauvasenranta.sqlite;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+/**
+ * Use build-in SqLiteOpenHelper class to store data with sqlite database
+ * store data in different datatypes in database table(column and row)
+
+ */
+
 
 public class DBmanager extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "VAUVA_SENRANTA";

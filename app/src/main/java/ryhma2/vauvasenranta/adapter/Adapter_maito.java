@@ -19,6 +19,15 @@ import ryhma2.vauvasenranta.sqlite.RuokaDAO;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <h1>Info class!</h1>
+ * This class used to get and send information to MaitoActivity.
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
+
 public class Adapter_maito extends RecyclerView.Adapter<Adapter_maito.ViewHodel> {
     private List<MaitoPumppu> maitoa;
     private Context context;

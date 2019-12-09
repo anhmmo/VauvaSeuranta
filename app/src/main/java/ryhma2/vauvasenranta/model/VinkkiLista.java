@@ -1,5 +1,11 @@
 package ryhma2.vauvasenranta.model;
 
+
+/**
+ * Object-Oriented Programming java.
+ * a simple class with instance variables and contructor, get and set function
+ * used in VinkkiActivity, VinkkiFragment, VinkkiLista, Adepter_info, InfoActivity.
+ */
 public class VinkkiLista {
     private String mVinkkiNimi;
     private String mVinkkiTiedot;

@@ -10,6 +10,11 @@ import ryhma2.vauvasenranta.model.Vaippa;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * create new table to store data for VaippaActivity
+ * Insert,Update, delete data.
+ */
 public class VaippaDAO {
     private SQLiteDatabase db;
 

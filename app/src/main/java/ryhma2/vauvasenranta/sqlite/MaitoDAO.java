@@ -10,6 +10,11 @@ import ryhma2.vauvasenranta.model.MaitoPumppu;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * create new table to store data for MaitoActivity
+ * Insert,Update, delete data.
+ */
+
 public class MaitoDAO {
     private SQLiteDatabase db;
 

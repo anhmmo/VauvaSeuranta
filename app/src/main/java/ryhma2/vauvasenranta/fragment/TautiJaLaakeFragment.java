@@ -11,7 +11,14 @@ import android.webkit.WebViewClient;
 
 import ryhma2.vauvasenranta.R;
 
+/**
+ * <h1>Meista class!</h1>
+ * This class used built-in function to open webpage in the app.
 
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
 public class TautiJaLaakeFragment extends Fragment {
 private WebView webView;
 

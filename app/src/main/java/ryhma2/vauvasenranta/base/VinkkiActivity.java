@@ -6,6 +6,11 @@ import android.widget.TextView;
 
 import ryhma2.vauvasenranta.R;
 
+
+/**
+ * get data from tablayout and viewholder adapter
+ *
+ */
 public class VinkkiActivity extends AppCompatActivity {
     TextView vinkkiNimi,vinkkiTiedot;
     @Override

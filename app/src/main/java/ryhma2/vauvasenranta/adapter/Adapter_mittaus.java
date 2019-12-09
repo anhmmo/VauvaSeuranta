@@ -16,6 +16,15 @@ import ryhma2.vauvasenranta.model.Mittaus;
 
 import java.util.List;
 
+/**
+ * <h1>Info class!</h1>
+ * This class used to get and send information to MittausActivity.
+
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
+
 public class Adapter_mittaus extends RecyclerView.Adapter<Adapter_mittaus.ViewHodel> {
     private List<Mittaus> mittausList;
     private Context context;

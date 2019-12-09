@@ -4,17 +4,13 @@ import android.media.MediaPlayer;
 
 
 /**
- * <h1>Hello, World!</h1>
- * The HelloWorld program implements an application that
- * simply displays "Hello World!" to the standard output.
- * <p>++
- * Giving proper comments in your program makes it more
- * user friendly and it is assumed as a high quality code.
+ * <h1>MusicPlayer</h1>
+ * Play, stop, resume and loop sounds
  *
  *
- * @author  Zara Ali
+ * @author  Au Nguyen
  * @version 1.0
- * @since   2014-03-31
+ * @since   1.12.2019
  */
 
 public class MusicPlayer {
@@ -30,10 +26,11 @@ public class MusicPlayer {
         this.music = music;
     }
 
+    /**
+     * play sound and keep looping util user click on the button.
+     * @param music return pause() if music is playing or start() if music not playing
+     */
     public void playMusic(MediaPlayer music) {
-
-
-
         if (music.isPlaying() == true)
         // Pause the music player
         {
@@ -50,6 +47,11 @@ public class MusicPlayer {
         }
     }
 
+
+    /**
+     * allow only on sound play, all other sound must be stopped.
+
+     */
     public void stopPlayingMusic(MediaPlayer music1,MediaPlayer music20, MediaPlayer music2, MediaPlayer music3, MediaPlayer music4,MediaPlayer music5, MediaPlayer music6, MediaPlayer music7, MediaPlayer music8,MediaPlayer music9, MediaPlayer music10, MediaPlayer music11, MediaPlayer music12,MediaPlayer music13, MediaPlayer music14, MediaPlayer music15, MediaPlayer music16, MediaPlayer music17, MediaPlayer music18, MediaPlayer music19){
         if(music1.isPlaying())
         {music1.pause();}

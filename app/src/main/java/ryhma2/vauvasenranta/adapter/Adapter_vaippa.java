@@ -15,7 +15,14 @@ import ryhma2.vauvasenranta.model.Vaippa;
 import ryhma2.vauvasenranta.sqlite.VaippaDAO;
 
 import java.util.List;
+/**
+ * <h1>Info class!</h1>
+ * This class used to get and send information to VaippaActivity.
 
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
 public class Adapter_vaippa extends RecyclerView.Adapter<Adapter_vaippa.ViewHodel> {
     private List<Vaippa> vaippaLista;
     private Context context;

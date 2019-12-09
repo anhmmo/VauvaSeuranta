@@ -2,6 +2,11 @@ package ryhma2.vauvasenranta.model;
 
 import ryhma2.vauvasenranta.base.TimerActivity;
 
+/**
+ * Object-Oriented Programming java.
+ * a simple class with instance variables and contructor, get and set function
+ * used in MaitoActivity, Adapter_maito, MaitoDao.
+ */
 public class MaitoPumppu {
 
     private int maitoMaara;

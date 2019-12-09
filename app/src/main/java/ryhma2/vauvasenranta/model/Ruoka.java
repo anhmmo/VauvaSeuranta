@@ -1,7 +1,11 @@
 package ryhma2.vauvasenranta.model;
 
 import ryhma2.vauvasenranta.base.TimerActivity;
-
+/**
+ * Object-Oriented Programming java.
+ * a simple class with instance variables and contructor, get and set function
+ * used in RuokaActivity, Adapter_ruoka, RuokaDao.
+ */
 public class Ruoka {
     private String ruokaLaji;
     private int maitoMaara;

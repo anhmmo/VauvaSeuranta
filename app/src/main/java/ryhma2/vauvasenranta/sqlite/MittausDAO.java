@@ -10,6 +10,10 @@ import ryhma2.vauvasenranta.model.Mittaus;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * create new table to store data for MittausActivity
+ * Insert,Update, delete data.
+ */
 public class MittausDAO {
     SQLiteDatabase db;
 

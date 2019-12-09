@@ -10,6 +10,11 @@ import ryhma2.vauvasenranta.model.Ruoka;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * create new table to store data for RuokaActivity
+ * Insert,Update, delete data.
+ */
 public class RuokaDAO {
     private SQLiteDatabase db;
 

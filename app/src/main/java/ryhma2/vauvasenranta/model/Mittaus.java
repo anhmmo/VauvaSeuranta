@@ -2,6 +2,12 @@ package ryhma2.vauvasenranta.model;
 
 import ryhma2.vauvasenranta.base.TimerActivity;
 
+/**
+ * Object-Oriented Programming java.
+ * a simple class with instance variables and contructor, get and set function
+ * used in MittausActivity, Adapter_mittaus, MittausDao.
+ */
+
 public class Mittaus {
     private String mittausNote;
     private double pituus;

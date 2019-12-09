@@ -1,5 +1,11 @@
 package ryhma2.vauvasenranta.model;
 
+/**
+ * Object-Oriented Programming java.
+ * a simple class with instance variables and contructor, get and set function
+ * used in VaippaActivity, Adapter_vaippa, VaippaDao.
+ */
+
 public class Vaippa {
     private String mVaippaLaji;
     private String mMuistinpano;

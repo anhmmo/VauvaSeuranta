@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple Arraylist to display information of hoito-opas
  */
 public class VinkkiFragment extends Fragment {
 

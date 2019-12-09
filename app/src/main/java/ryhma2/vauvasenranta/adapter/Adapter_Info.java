@@ -100,7 +100,7 @@ public class Adapter_Info extends RecyclerView.Adapter<Adapter_Info.ViewHodel> {
 
         /**
          * get input then save to databases
-         * @param v
+         * @param v return view
          */
         @Override
         public void onClick(View v) {

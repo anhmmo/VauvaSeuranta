@@ -16,7 +16,14 @@ import ryhma2.vauvasenranta.model.Ruoka;
 import ryhma2.vauvasenranta.sqlite.RuokaDAO;
 
 import java.util.List;
+/**
+ * <h1>Info class!</h1>
+ * This class used to get and send information to RuokaActivity.
 
+ * @author  Au Nguyen
+ * @version 1.0
+ * @since   10.12.2019
+ */
 public class Adapter_ruoka extends RecyclerView.Adapter<Adapter_ruoka.ViewHodel>{
     private List<Ruoka> ruokalist;
     private Context context;
