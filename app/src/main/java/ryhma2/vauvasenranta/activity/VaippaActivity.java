@@ -10,6 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import ryhma2.vauvasenranta.R;
@@ -63,6 +65,8 @@ public class VaippaActivity extends AppCompatActivity {
                 View v5 = getLayoutInflater().inflate(R.layout.dialog_vaipanvaihto,null);
                 final EditText edvaippalaji = (EditText) v5.findViewById(R.id.ed_vaippalaji);
                 final EditText  ednote = (EditText) v5.findViewById(R.id.ed_notevaippa);
+                final RadioGroup vaipa = v5.findViewById(R.id.radiogroundVaippa);
+
                 Button btnpoistu = (Button) v5.findViewById(R.id.btn_poistuVaippa);
                 Button  btnLisaaVaippa = (Button) v5.findViewById(R.id.btn_lisaaVaippa);
                 builder.setView(v5);
@@ -80,7 +84,34 @@ public class VaippaActivity extends AppCompatActivity {
                 btnLisaaVaippa.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String laji = edvaippalaji.getText().toString();
+
+
+                        String laji = "";
+
+                        if(vaipa.getCheckedRadioButtonId()==R.id.radioButton){
+                            laji = "Pisavaippa";
+
+
+                        }
+                        else if(vaipa.getCheckedRadioButtonId()==R.id.radioButton2){
+                            laji = "Kakkavaippa";
+
+
+                        }
+
+                        else if(vaipa.getCheckedRadioButtonId()==R.id.radioButton3){
+                            laji = "Kakka ja -pisavaippa";
+
+
+                        }
+
+                        else{
+                            laji = edvaippalaji.getText().toString();
+                        }
+
+
+
+
 
                         String note = ednote.getText().toString();
                         String aiko = aika.getCurrentTime();

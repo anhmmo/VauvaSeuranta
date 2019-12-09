@@ -78,10 +78,10 @@
             android:id="@+id/tv_KG"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="66dp"
-            android:layout_toEndOf="@+id/tv_paino"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="35dp"
             android:text="KG"
             android:textAllCaps="true"
             android:textColor="@color/colorAccent"
@@ -103,9 +103,19 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="6dp"
             android:text="aika" />
+
+        <Button
+            android:id="@+id/button36"
+            android:layout_width="32dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/ic_clock" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

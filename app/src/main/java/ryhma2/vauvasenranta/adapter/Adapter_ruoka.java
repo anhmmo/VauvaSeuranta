@@ -68,12 +68,12 @@ public class Adapter_ruoka extends RecyclerView.Adapter<Adapter_ruoka.ViewHodel>
 
         public ViewHodel(View itemView, OnitemDeleteItem onitemDeleteDan) {
             super(itemView);
-
             tvRuokaLaji = (TextView) itemView.findViewById(R.id.tv_laji);
             tvMaitoMaara = (TextView) itemView.findViewById(R.id.tv_maara);
             tvMuistipano = (TextView) itemView.findViewById(R.id.tv_muisti);
             tvaika = itemView.findViewById(R.id.textViewAika);
             imgPoistetaanRuoka = (ImageView) itemView.findViewById(R.id.img_poistetaan);
+
         }
     }
 }

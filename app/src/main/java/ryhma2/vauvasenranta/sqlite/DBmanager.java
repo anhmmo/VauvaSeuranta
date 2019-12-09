@@ -19,22 +19,22 @@ public class DBmanager extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String maito = "CREATE TABLE PUMPPUMAITO (" +
-                "MAITOLAJI TEXT PRIMARY KEY," +
+                "AIKA TEXT PRIMARY KEY," +
                 "MAARA INTEGER," +
                 "NOTE TEXT)";
         String ruoka = "CREATE TABLE RUOKA (" +
-                "RUOKALAJI TEXT PRIMARY KEY," +
-                "MAARA INTEGER," +
-                "AIKA TEXT," +
+                "MAITOLAJI TEXT ," +
+                "MAARA INTEGER ," +
+                "AIKA TEXT PRIMARY KEY," +
                 "MUISTIPANO TEXT) ";
         String vaippa = "CREATE TABLE VAIPPA (" +
-                "VAIPPALAJI TEXT PRIMARY KEY," +
+                "VAIPPALAJI TEXT," +
                 "NOTE TEXT," +
-                "AIKA TEXT)";
+                "AIKA TEXT PRIMARY KEY)";
         String mittaus = "CREATE TABLE MITTAUS (" +
-                "MITTAUSNOTE TEXT PRIMARY KEY," +
+                "MITTAUSNOTE TEXT," +
                 "PITUUS DOUBLE," +
-                "AIKA TEXT," +
+                "AIKA TEXT  PRIMARY KEY," +
                 "PAINO DOUBLE)";
 
         db.execSQL(maito);

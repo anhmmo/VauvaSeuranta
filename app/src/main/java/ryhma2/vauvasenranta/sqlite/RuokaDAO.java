@@ -20,7 +20,7 @@ public class RuokaDAO {
 
     public long insert(Ruoka ruoat){
         ContentValues values = new ContentValues();
-        values.put("RUOKALAJI",ruoat.getRuokaLaji());
+        values.put("MAITOLAJI",ruoat.getRuokaLaji());
         values.put("MAARA",ruoat.getMaitoMaara());
         values.put("MUISTIPANO",ruoat.getMuistiPano());
         values.put("AIKA",ruoat.getAika());
@@ -31,7 +31,7 @@ public class RuokaDAO {
         String sql = "select * from RUOKA ";
         Cursor cursor = db.rawQuery(sql,null);
         while (cursor.moveToNext()){
-            String laji = cursor.getString(cursor.getColumnIndex("RUOKALAJI"));
+            String laji = cursor.getString(cursor.getColumnIndex("MAITOLAJI"));
             int maitomaarat = cursor.getInt(cursor.getColumnIndex("MAARA"));
             String note = cursor.getString(cursor.getColumnIndex("MUISTIPANO"));
             String aika= cursor.getString(cursor.getColumnIndex("AIKA"));
@@ -39,8 +39,10 @@ public class RuokaDAO {
         }
         return list;
     }
+
+
     public int delete(Ruoka ruoat){
-        return db.delete("RUOKA","RUOKALAJI=?", new String[]{ruoat.getRuokaLaji()});
+        return db.delete("RUOKA","AIKA=?", new String[]{ruoat.getAika()});
     }
 
 }

@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,12 +53,15 @@ public class RuokaActivity extends AppCompatActivity {
         ruoka_databases.delete(ruoat);
         updatedata();
     }
+
+    //start add button function
     public void lisaaRuoka(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(RuokaActivity.this);
         View v = getLayoutInflater().inflate(R.layout.dialog_ruoka,null);
         final EditText ruokaLaji = v.findViewById(R.id.ed_laji);
         final EditText maitoMaara = v.findViewById(R.id.ed_maara);
         final EditText muistiPano = v.findViewById(R.id.ed_note);
+        final RadioGroup ryhma = v.findViewById(R.id.boxMaitoLaji);
         Button btn_poistu = v.findViewById(R.id.btn_poistu);
         Button btn_lisaa = v.findViewById(R.id.btn_lisaamaito);
         builder.setView(v);
@@ -75,21 +79,54 @@ public class RuokaActivity extends AppCompatActivity {
         btn_lisaa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String laji = ruokaLaji.getText().toString();
+                String laji = "";
+
+                if(ryhma.getCheckedRadioButtonId()==R.id.radioButton7){
+                    laji = "Rintamaito";
+
+
+                }
+                else if(ryhma.getCheckedRadioButtonId()==R.id.radioButton8){
+                    laji = "Pullomaito";
+
+
+                }
+
+                else{
+                    laji = ruokaLaji.getText().toString();
+                }
+
+
+
+
                 int maara = ParseInt(maitoMaara.getText().toString());
                 String noteet = muistiPano.getText().toString();
                 String aiko = aika.getCurrentTime();
-                if (laji.isEmpty() || maitoMaara.getText().toString().isEmpty()){
-                    Toast.makeText(RuokaActivity.this, "Täytä puuttuvat tiedot", Toast.LENGTH_SHORT).show();
-                }else {
-                    ruoka_databases.insert(new Ruoka(laji,maara,noteet,aiko));
-                    Toast.makeText(RuokaActivity.this, "Lisää onnistuneesti", Toast.LENGTH_SHORT).show();
-                    updatedata();
-                    dialog.dismiss();
+                if(ryhma.getCheckedRadioButtonId()!=R.id.radioButton7 && ryhma.getCheckedRadioButtonId()!=R.id.radioButton8 && (ruokaLaji.getText().toString().isEmpty()))
+                {
+
+                    Toast.makeText(RuokaActivity.this, "Täytä puuttuvat ruoat tiedot", Toast.LENGTH_SHORT).show();
+                }
+
+                else {
+
+                    if (maitoMaara.getText().toString().isEmpty()) {
+                        Toast.makeText(RuokaActivity.this, "Täytä ruoan määrä tiedot", Toast.LENGTH_SHORT).show();
+                    } else {
+                        ruoka_databases.insert(new Ruoka(laji, maara, noteet, aiko));
+                        Toast.makeText(RuokaActivity.this, "Lisää onnistuneesti", Toast.LENGTH_SHORT).show();
+                        updatedata();
+                        dialog.dismiss();
+
+                    }
+
                 }
             }
         });
     }
+
+    //add button function end
+
     public int ParseInt(String strNumber) {
         if (strNumber != null && strNumber.length() > 0) {
             try {

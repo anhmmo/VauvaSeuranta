@@ -34,7 +34,7 @@ public class Adapter_TAUTI_VINKKI_tablelayout extends FragmentStatePagerAdapter 
             case 0:
                 return "TAUTI JA LÄÄKE";
             case 1:
-                return "VINKKI";
+                return "HOITO-OPAS";
             default:
                 return null;
         }

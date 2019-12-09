@@ -20,7 +20,7 @@ public class MaitoDAO {
     }
     public long insert(MaitoPumppu maitoa){
         ContentValues values = new ContentValues();
-        values.put("MAITOLAJI",maitoa.getMaitoNimet());
+        values.put("AIKA",maitoa.getAika());
         values.put("MAARA",maitoa.getMaitoMaara());
         values.put("NOTE",maitoa.getMaitoNote());
         return db.insert("PUMPPUMAITO",null,values);
@@ -29,8 +29,11 @@ public class MaitoDAO {
         List<MaitoPumppu> list = new ArrayList<>();
         String sql = "select * from PUMPPUMAITO";
         Cursor cursor = db.rawQuery(sql,null);
+
+        
+
         while (cursor.moveToNext()){
-            String nimi = cursor.getString(cursor.getColumnIndex("MAITOLAJI"));
+            String nimi = cursor.getString(cursor.getColumnIndex("AIKA"));
             int maara = cursor.getInt(cursor.getColumnIndex("MAARA"));
             String note = cursor.getString(cursor.getColumnIndex("NOTE"));
             list.add(new MaitoPumppu(nimi,maara,note));
@@ -38,7 +41,7 @@ public class MaitoDAO {
         return list;
     }
     public int delete(MaitoPumppu maitoa){
-        return db.delete("PUMPPUMAITO","MAITOLAJI=?",new String[]{maitoa.getMaitoNimet()});
+        return db.delete("PUMPPUMAITO","AIKA=?",new String[]{maitoa.getAika()});
     }
 
 
