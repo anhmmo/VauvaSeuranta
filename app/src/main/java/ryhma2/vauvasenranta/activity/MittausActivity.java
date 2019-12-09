@@ -34,7 +34,7 @@ public class MittausActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mittaus);
-        ryc_mittaus = findViewById(R.id.recyclerview_baocao);
+        ryc_mittaus = findViewById(R.id.recyclerview_mittaus);
         fab_mittaus = findViewById(R.id.fab_mittausbtn);
         ryc_mittaus.setLayoutManager(new LinearLayoutManager(MittausActivity.this));
         aika = new TimerActivity();

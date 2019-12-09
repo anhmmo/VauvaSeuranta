@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="15dp">
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="match_parent"
+        android:layout_width="123dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
         android:text="RUOKAILU"
+        android:layout_marginBottom="15dp"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/boxMaitoLaji"
+        android:layout_width="match_parent"
+        android:layout_height="243dp">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rintamaito" />
+
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="83dp"
+            android:layout_height="81dp"
+            android:background="@drawable/ic_mother" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pullomaito" />
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:background="@drawable/milk_bottle" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/ed_laji"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Mikä ruoka"
+        android:hint="Muu ruoka"
         android:inputType="textPersonName" />
 
     <EditText
@@ -61,4 +94,6 @@
             android:text="lISÄÄ"
             android:textColor="@color/white" />
     </LinearLayout>
+
+
 </LinearLayout>

@@ -37,7 +37,7 @@ public class VaippaDAO {
         return list;
     }
     public int delete(Vaippa vaihto){
-        return db.delete("VAIPPA","VAIPPALAJI=?",new String[]{vaihto.getmVaippaLaji()});
+        return db.delete("VAIPPA","AIKA=?",new String[]{vaihto.getmAika()});
     }
 
 }

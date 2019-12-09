@@ -44,7 +44,7 @@ public class Adapter_maito extends RecyclerView.Adapter<Adapter_maito.ViewHodel>
     public void onBindViewHolder(@NonNull ViewHodel holder, final int position) {
         ruoka_databases = new RuokaDAO(context);
         maito_database = new MaitoDAO(context);
-        holder.nimi.setText(maitoa.get(position).getMaitoNimet());
+        holder.aika.setText(maitoa.get(position).getAika());
         holder.maara.setText(maitoa.get(position).getMaitoMaara()+"");
         holder.textit.setText(maitoa.get(position).getMaitoNote());
         //when user click delete icon, item will be deleted
@@ -67,7 +67,7 @@ public class Adapter_maito extends RecyclerView.Adapter<Adapter_maito.ViewHodel>
 
     public static class ViewHodel extends RecyclerView.ViewHolder implements View.OnClickListener{
     public ImageView luku, poistetaan;
-    public TextView nimi, textit, summa, maara;
+    public TextView aika, textit, summa, maara;
     ArrayList<MaitoPumppu> maidot = new ArrayList<>();
 
     Context context;
@@ -77,12 +77,12 @@ public class Adapter_maito extends RecyclerView.Adapter<Adapter_maito.ViewHodel>
             this.maidot = maidot;
             itemView.setOnClickListener(this);
 
-            luku = itemView.findViewById(R.id.img_dan);
+            luku = itemView.findViewById(R.id.img_pumppu);
             poistetaan = itemView.findViewById(R.id.img_poistaa);
-            nimi = itemView.findViewById(R.id.img_nimet);
-            textit = itemView.findViewById(R.id.tinhtrangdan);
-            summa = itemView.findViewById(R.id.luongcam_dan);
-            maara = itemView.findViewById(R.id.tv_soluongdan);
+            aika = itemView.findViewById(R.id.img_aika);
+            textit = itemView.findViewById(R.id.maito_note);
+            summa = itemView.findViewById(R.id.tarvitaan_maara);
+            maara = itemView.findViewById(R.id.tv_pumppu_maara);
         }
 
         @Override

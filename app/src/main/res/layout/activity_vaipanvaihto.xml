@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView9"
         android:layout_alignStart="@+id/textView9"
-        android:text="Vaipanvaihtolista"
+        android:text="VAIPANVAIHTO LISTA"
         android:textColor="@color/colorPrimary" />
 
     <LinearLayout

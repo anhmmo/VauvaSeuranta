@@ -22,17 +22,10 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/ed_sohieudan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
 
-            android:hint="Mikä maito"
-            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/ed_soluongdan"
+            android:id="@+id/ed_maito_maara"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -40,7 +33,7 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/ed_tinhtrang"
+            android:id="@+id/ed_note_maito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -57,18 +50,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@color/colorAccent"
                 android:text="Poistu"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btn_lisaa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@android:color/holo_blue_light"
                 android:text="Lisää"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 

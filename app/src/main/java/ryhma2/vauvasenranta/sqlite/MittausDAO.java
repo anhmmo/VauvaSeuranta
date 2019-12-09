@@ -40,6 +40,6 @@ public class MittausDAO {
         return list;
     }
     public int delete(Mittaus mitat){
-        return db.delete("MITTAUS","MITTAUSNOTE=?",new String[]{mitat.getMittausNote()});
+        return db.delete("MITTAUS","AIKA=?",new String[]{mitat.getAika()});
     }
 }
