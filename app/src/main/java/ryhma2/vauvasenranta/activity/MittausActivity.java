@@ -35,7 +35,7 @@ import java.util.List;
  * Instance variable <b>aika</b> create new TimerActivity class instance.
 
 
- * @author  Au Nguyen
+ * @author  Kuikka Roni
  * @version 1.0
  * @since   10.12.2019
  */

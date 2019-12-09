@@ -19,7 +19,7 @@ import ryhma2.vauvasenranta.R;
 
 
 
- * @author  Au Nguyen
+ * @author  Kuikka Roni
  * @version 1.0
  * @since   10.12.2019
  */
