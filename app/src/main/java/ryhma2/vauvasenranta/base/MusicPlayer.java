@@ -2,7 +2,23 @@ package ryhma2.vauvasenranta.base;
 
 import android.media.MediaPlayer;
 
+
+/**
+ * <h1>Hello, World!</h1>
+ * The HelloWorld program implements an application that
+ * simply displays "Hello World!" to the standard output.
+ * <p>++
+ * Giving proper comments in your program makes it more
+ * user friendly and it is assumed as a high quality code.
+ *
+ *
+ * @author  Zara Ali
+ * @version 1.0
+ * @since   2014-03-31
+ */
+
 public class MusicPlayer {
+
     private MediaPlayer music;
 //David Neto https://stackoverflow.com/questions/18678873/android-button-click-to-play-music-click-again-to-stop-sound
 
@@ -15,6 +31,9 @@ public class MusicPlayer {
     }
 
     public void playMusic(MediaPlayer music) {
+
+
+
         if (music.isPlaying() == true)
         // Pause the music player
         {

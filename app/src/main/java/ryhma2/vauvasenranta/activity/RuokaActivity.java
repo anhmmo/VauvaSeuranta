@@ -143,14 +143,6 @@ public class RuokaActivity extends AppCompatActivity {
 
     public int ParseInt(String strNumber) {
 
-        /**
-         * This method is used to add two integers. This is
-         * a the simplest form of a class method, just to
-         * show the usage of various javadoc Tags.
-         * @param strNumber This is the first paramter to addNum method
-         * @return int This returns sum of numA and numB.
-         */
-
         if (strNumber != null && strNumber.length() > 0) {
             try {
                 return Integer.parseInt(strNumber);

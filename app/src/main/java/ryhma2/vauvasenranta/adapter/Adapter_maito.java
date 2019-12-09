@@ -56,7 +56,7 @@ public class Adapter_maito extends RecyclerView.Adapter<Adapter_maito.ViewHodel>
             }
         });
         int maarat = Integer.parseInt(holder.maara.getText().toString());
-        int kq = (800-maarat);
+        int kq = 800;
         holder.summa.setText(String.valueOf(kq));
 
     }
