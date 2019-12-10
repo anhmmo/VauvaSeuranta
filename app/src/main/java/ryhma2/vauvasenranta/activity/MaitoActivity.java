@@ -58,7 +58,7 @@ public class MaitoActivity extends AppCompatActivity {
         aika = new TimerActivity();
         recyclerview_maito.setLayoutManager(new LinearLayoutManager(MaitoActivity.this));
 
-
+        Toast.makeText(MaitoActivity.this, "Lisää maitopumppu historia", Toast.LENGTH_SHORT).show();
         //add to ryc
         maito = maito_databases.getAlldata();
         adapter_maito = new Adapter_maito(maito, MaitoActivity.this, new OnitemDeleteItem() {
