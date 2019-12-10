@@ -60,7 +60,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="2dp"
         android:layout_marginRight="4dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginBottom="540dp"
         app:backgroundTint="@color/colorPrimary"
         app:srcCompat="@drawable/ic_add_black_24dp" />
 

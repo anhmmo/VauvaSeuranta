@@ -34,8 +34,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="98dp"
-        android:layout_marginBottom="223dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="222dp"
         android:text="Au, Ann-mari, Roni"
         android:textSize="18sp" />
 
